@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımda</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f4f7fc;
+        color: #212529;
+        line-height: 1.6;
+      }
+      .navbar {
+        background-color: #0056d6;
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .navbar ul li {
+        margin: 0 20px;
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .navbar ul li a:hover,
+      .navbar ul li a.active {
+        background-color: #003ea6;
+        transform: scale(1.1);
+      }
+      .about-header {
+        text-align: center;
+        padding: 80px 20px;
+        background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+      }
+      .about-header h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        color: #0056d6;
+      }
+      .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        border-radius: 12px;
+        max-width: 1200px;
+      }
+      .about-text {
+        flex: 2;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #495057;
+        margin: 25px;
+        text-align: justify;
+      }
+      footer {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #0056d6;
+        color: white;
+        text-align: center;
+      }
+      footer a {
+        color: #ffc107;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      .about-img {
+        border-radius: 50%;
+        background-image: url("resimler/kopek.jpeg");
+        background-size: cover;
+        background-position: center;
+        width: 480px;
+        height: 470px;
+        margin: 20px;
+        display: flexbox;
+        display: grid;
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XTTKCYE4NT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XTTKCYE4NT");
+    </script>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">AnaSayfa</a></li>
+        <li><a href="hakkimda.html" class="active">Hakkımda</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </div>
+
+    <div class="about-header">
+      <h1>Hakkımda</h1>
+    </div>
+
+    <div class="about-content">
+      <div class="about-img"></div>
+      <div class="about-text">
+        <p>
+          Merhaba, Ben Şevval Cinek 26.08.2005 yılında doğdum Ordu’nun Altınordu
+          ilçesinde yaşıyorum, Hobilerim insanlara yardım etmeyi mutlu etmeyi
+          seviyorum ve hayvanlarla vakit geçirmeyi çok seviyorum. Eğitimime
+          2019-2023 yılları arasında lisede Bilişim Teknolojilerin'den devam
+          ederek. 12.sınıfta Ordu Devlet Hastanesi’nde staj yaparak sağlık
+          sektöründe deneyim kazandım. Şu anda Sinop Üniversitesi Ayancık Meslek
+          Yüksekokulu’nda İnternet ve Ağ Teknolojileri Bölümü’nde öğrenim
+          görüyorum. Python programlama dili, HTML ve CSS gibi web tasarım
+          dillerini öğrenerek kendimi geliştirmeye devam ediyorum. En büyük
+          hayalim, güçlü bir iş kadını olarak kendi ayaklarımın üzerinde durmak
+          ve kariyerimde başarılı olmaktır.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2025 <a href="mailto:example@mail.com">Şevval Cinek</a>. Tüm
+      hakları saklıdır.
+    </footer>
+  </body>
+</html>
